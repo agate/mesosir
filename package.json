@@ -1,0 +1,25 @@
+{
+  "name": "mesosir",
+  "version": "1.0.0",
+  "description": "a restful api service for querying mesos related resources.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/agate/mesosir.git"
+  },
+  "keywords": [
+    "mesos"
+  ],
+  "author": "agate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agate/mesosir/issues"
+  },
+  "homepage": "https://github.com/agate/mesosir#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

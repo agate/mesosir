@@ -1,0 +1,10 @@
+version: '2'
+services:
+  app:
+    build: ./docker
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/home/app/webapp
+    environment:
+      - GIT_REPO=git@github.com:agate/mesosir.git
