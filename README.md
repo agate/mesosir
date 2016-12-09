@@ -1,0 +1,10 @@
+# Mesosir
+
+## HOW TO RUN
+
+```
+env MESOS_HOST=<YOUR MESOS HOST> \
+    MESOS_PORT=<DEFAULT TO 80> \
+    MESOS_SLAVE_PORT=<YOUR MESOS SLAVE PORT> \
+    npm start
+```
