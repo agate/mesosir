@@ -1,11 +1,15 @@
 version: '2'
 services:
   app:
-    image: agate/docker-passenger-git-node-app
+    image: node:7
     ports:
-      - "8080:80"
+      - "3000:3000"
     volumes:
-      - .:/home/app/webapp
+      - .:/mesosir
+    entrypoint:
+      - /mesosir/launch.sh
     environment:
-      - GIT_REPO=git@github.com:agate/mesosir.git
-      - SSH_KEY=${SSH_KEY}
+      - GIT_REPO=https://github.com/agate/mesosir.git
+      - MESOS_HOST=${MESOS_HOST}
+      - MESOS_PORT=${MESOS_PORT}
+      - MESOS_SLAVE_PORT=${MESOS_PORT}
